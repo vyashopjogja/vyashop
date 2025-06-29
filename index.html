@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vya Thrift | Linktree</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #fff8f0, #d6e5d8, #f0ebe3, #e0c097);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 4px solid #e0c097;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+      color: #5e503f;
+    }
+
+    p {
+      font-size: 14px;
+      color: #7b6d53;
+      margin-bottom: 25px;
+    }
+
+    .linktree {
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .linktree a {
+      display: block;
+      text-decoration: none;
+      background: #e0c097;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 12px 0;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(224, 192, 151, 0.4);
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .linktree a:hover {
+      background: #d4b07c;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 6px 18px rgba(224, 192, 151, 0.5);
+    }
+
+    .linktree a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-20deg);
+      transition: left 0.5s;
+    }
+
+    .linktree a:hover::after {
+      left: 100%;
+    }
+
+    .footer {
+      margin-top: 35px;
+      font-size: 12px;
+      color: #a89f91;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="img/logo.jpg" alt="Foto Profil" class="profile-img" />
+  <h1>Vya Thrift</h1>
+  <p>୨ৎ cuss negoinn!!</p>
+
+  <div class="linktree">
+    <a href="https://wa.me/6288228910546" target="_blank">WhatsApp</a>
+    <a href="https://chat.whatsapp.com/KW3EvWOtNBQ3PBEj4E3QFf" target="_blank">Group Preloved</a>
+    <a href="http://shopee.co.id/adeviaacv" target="_blank">Shopee</a>
+  </div>
+
+  <div class="footer">
+    © 2025 Vya Thrift
+  </div>
+
+</body>
+
+</html>
